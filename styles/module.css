@@ -1,0 +1,26 @@
+.social-icons li {
+  display: inline;
+  float: right;
+  padding-right: 5%;
+  padding-bottom: 5%;
+}
+
+.navbar li {
+  display: inline;
+  margin-right: .5em;
+  font-size: 1em;
+  padding: .5em .25em;
+  border-bottom: 1px solid black;
+}
+
+h2, h3, h4   {
+  text-align: center;
+}
+
+img {
+  display: inline;
+  width: 35%;
+  height: 35%;
+  max-width: 100%;
+  padding-top: 2em;
+}
