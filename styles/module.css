@@ -1,0 +1,89 @@
+.social-icons li {
+  display: inline;
+  float: right;
+  margin-right: 5px;
+  margin-bottom: 5%;
+}
+
+/*.site-header {
+  width: 750px;
+  margin:0 auto;
+}*/
+.site-navbar li {
+  float: left;
+  margin-right: 1.5em;
+  padding: .5em .25em;
+  /*background-color: #445878;*/
+}
+
+.site-navbar {
+  width: 750px;
+  margin:0 auto;
+  list-style: none;
+}
+
+nav {
+  /*clear: both;*/
+  width: 750px;
+
+}
+.site-navbar li a {
+  display: block;
+  text-align: center;
+  width: 100px;
+  /*text-decoration: none;*/
+  color: #92CDCF;
+}
+
+  footer {
+    clear: both;
+    display:inline-block;
+    color: #92CDCF;
+    position: fixed;
+    bottom: 0px;
+
+  }
+
+  footer li a {
+    margin-right: 1.5em;
+    padding: .5em .25em;
+    color: #92CDCF;
+  }
+
+  #me {
+    clear: both;
+    display: block;
+    margin: auto;
+    width: 30%;
+    height: 30%;
+  }
+
+  #hammer {
+    clear: both;
+    display: block;
+    margin: auto;
+    width: 20%;
+    height: 20%;
+
+  }
+  .rounded {
+        border-radius: 80%;
+  }
+    h1, h2 {
+      display: block;
+      text-align: center;
+      clear: both;
+      color: #92CDCF;
+      margin: auto;
+      font-size: 1em;
+    }
+
+  /*
+
+  1C1D21 black
+  31353D slate grey
+  445878 lighter slate
+  92CDCF light slate teal
+  EEEFF7 very light slate teal
+
+  */
