@@ -5,33 +5,26 @@
   margin-bottom: 5%;
 }
 
-/*.site-header {
-  width: 750px;
-  margin:0 auto;
-}*/
 .site-navbar li {
-  float: left;
+  display: inline-block;
   margin-right: 1.5em;
   padding: .5em .25em;
   /*background-color: #445878;*/
 }
 
 .site-navbar {
-  width: 750px;
-  margin:0 auto;
+  margin:0;
+  padding:0;
+  display: inline-block;
   list-style: none;
 }
 
 nav {
-  /*clear: both;*/
-  width: 750px;
-
+  text-align: center;
 }
 .site-navbar li a {
   display: block;
-  text-align: center;
-  width: 100px;
-  /*text-decoration: none;*/
+  text-decoration: none;
   color: #92CDCF;
 }
 
