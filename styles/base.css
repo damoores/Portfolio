@@ -1,8 +1,18 @@
 body {
-  background-color: grey;
+  background-color: #31353D;
+  font-family: "Lucida Console", Monaco, monospace;
 }
 
-img {
-  max-width: 100%;
-  max-height: auto;
-}
+
+
+
+
+/*
+
+1C1D21 black
+31353D slate grey
+445878 lighter slate
+92CDCF light slate teal
+EEEFF7 very light slate teal
+
+*/
