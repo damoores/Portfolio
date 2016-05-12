@@ -13,9 +13,9 @@
   <img src="images/hammer.png" id="hammer" alt="Hammer icon">
   <nav>
     <ul class="site-navbar">
-      <li><a href="" >home</a></li>
-      <li><a href="" >blog</a></li>
-      <li><a href="" >contact</a></li>
+      <li class="tab" data-content"projects"><a href="#" >home</a></li>
+      <li class="tab" data-content"about"><a href="#" >about</a></li>
+      <li class="tab" data-content"contact"><a href="#" >contact</a></li>
     </ul>
   </nav>
   <main>
@@ -23,7 +23,7 @@
     <h2>Codesmith</2>
       <img src="images/me.jpg" id="me" class="rounded" alt="That's me">
 
-    <section id="projects">
+    <section id="projects" class"tab-content">
       <h2 id="latest-projects">Latest Projects</h2>
       <article class="template">
         <header>
@@ -36,7 +36,25 @@
         </header>
         <section class="project-body">
         </section>
+        <a href="#" class="read-on">Read on &rarr;</a>
       </article>
+    </section>
+
+    <section id="about" class"tab-content">
+      <h1>Some things I like</h1>
+      <ul>
+        <li>Playing poker</li>
+        <li>Good beer</li>
+        <li>Solving problems with code</li>
+        <li>My daughters</li>
+      </ul>
+    </section>
+
+    <section id="contact" class"tab-content">
+      <ul>
+        <li>damoores@gmail.com</li>
+        <li>971.227.9282</li>
+      </ul>
     </section>
 
     </main>
@@ -51,5 +69,6 @@
 
       <script src="scripts/projectData.js"></script>
       <script src="scripts/project.js"></script>
+      <script src="scripts/projectView.js"></script>
     </body>
     </html>
