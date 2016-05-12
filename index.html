@@ -1,37 +1,55 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Jeremy Moore. Solutions.</title>
-    <link href="styles/base.css" type="text/css" rel="stylesheet" />
-    <link href="styles/layout.css" type="text/css" rel="stylesheet" />
-    <link href="styles/module.css" type="text/css" rel="stylesheet" />
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jeremy Moore. Solutions.</title>
+  <link href="styles/base.css" type="text/css" rel="stylesheet" />
+  <link href="styles/layout.css" type="text/css" rel="stylesheet" />
+  <link href="styles/module.css" type="text/css" rel="stylesheet" />
 
-  </head>
-  <body>
-      <header class="site-header">
-          <nav>
-            <ul class="site-navbar">
-              <li><a href="" >home</a></li>
-              <li><a href="" >blog</a></li>
-              <li><a href="" >contact</a></li>
-            </ul>
-          </nav>
-      </header>
-    <main>
-      <img src="images/hammer.png" id="hammer" alt="Hammer icon">
-      <h1>Jeremy Moore</h1>
-      <h2>Codesmith</2>
+</head>
+<body>
+  <img src="images/hammer.png" id="hammer" alt="Hammer icon">
+  <nav>
+    <ul class="site-navbar">
+      <li><a href="" >home</a></li>
+      <li><a href="" >blog</a></li>
+      <li><a href="" >contact</a></li>
+    </ul>
+  </nav>
+  <main>
+    <h1>Jeremy Moore</h1>
+    <h2>Codesmith</2>
       <img src="images/me.jpg" id="me" class="rounded" alt="That's me">
+
+    <section id="projects">
+      <h2 id="latest-projects">Latest Projects</h2>
+      <article class="template">
+        <header>
+          <h1 id="project-title">Title</h1>
+          <div class="project-info">
+            <h2 class="category">Category</h2>
+            <h2 class="language">Language</h2>
+            <h2 class="client">Client</h2>
+          </div>
+        </header>
+        <section class="project-body">
+        </section>
+      </article>
+    </section>
+
     </main>
-      <footer>
-        <ul class="social-icons">
-          <li><a href="https://github.com/damoores" target=_blank" >github</a></li>
-          <li><a href="https://www.linkedin.com/in/jeremy-moore-78515a7b
-" target="_blank">linkdin</a></li>
+    <footer>
+      <ul class="social-icons">
+        <li><a href="https://github.com/damoores" target="_blank" >github</a></li>
+        <li><a href="https://www.linkedin.com/in/jeremy-moore-78515a7b" target="_blank">linkdin</a></li>
           <!-- <li><a href="" >snapchat</a></li> -->
         </ul>
-      </footer>
-  </body>
-</html>
+    </footer>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+      <script src="scripts/projectData.js"></script>
+      <script src="scripts/project.js"></script>
+    </body>
+    </html>

@@ -3,8 +3,20 @@ body {
   font-family: "Lucida Console", Monaco, monospace;
 }
 
+hr {
+  border-color: #445878;
+  background-color: #445878;
+  margin: 2em;
+  width: 80%;
+  margin: auto;
+}
 
-
+.project-body {
+  min-width: 300px;
+  width: 70%;
+  margin: auto;
+  padding-bottom: 1em;
+}
 
 
 /*
