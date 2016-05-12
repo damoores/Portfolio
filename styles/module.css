@@ -7,9 +7,9 @@
 
 .site-navbar li {
   display: inline-block;
-  margin-right: 1.5em;
+  margin-right: .75em;
+  margin-left: .75em;
   padding: .5em .25em;
-  /*background-color: #445878;*/
 }
 
 .site-navbar {
@@ -23,6 +23,14 @@ nav {
   text-align: center;
 }
 .site-navbar li a {
+  clear: both;
+  margin: auto;
+  display: block;
+  text-decoration: none;
+  color: #92CDCF;
+}
+
+#about ul li {
   display: block;
   text-decoration: none;
   color: #92CDCF;
@@ -76,6 +84,12 @@ nav {
 
     .template {
       display:none;
+    }
+
+    .project-body {
+      width: 860px;
+      max-width: 100%;
+      min-width: 300px;
     }
 
   /*

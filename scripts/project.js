@@ -17,7 +17,7 @@ Project.prototype.toHtml = function() {
   $newProject.find('.category').text(this.category);
   $newProject.find('.language').text(this.language);
   $newProject.find('.client').text(this.client);
-  $newProject.find('.project-body').text(this.description);
+  $newProject.find('.project-body').html(this.description);
 
   $newProject.append('<hr>');
   $newProject.removeClass('template');
