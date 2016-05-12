@@ -1,6 +1,6 @@
 .social-icons li {
-  display: inline;
-  float: right;
+  display: block;
+  float: left;
   margin-right: 5px;
   margin-bottom: 5%;
 }
@@ -32,8 +32,8 @@ nav {
     clear: both;
     display:inline-block;
     color: #92CDCF;
-    position: fixed;
     bottom: 0px;
+    width: 100%;
 
   }
 
@@ -46,7 +46,9 @@ nav {
   #me {
     clear: both;
     display: block;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4em;
     width: 30%;
     height: 30%;
   }
@@ -68,7 +70,12 @@ nav {
       clear: both;
       color: #92CDCF;
       margin: auto;
+      padding-top: 1em;
       font-size: 1em;
+    }
+
+    .template {
+      display:none;
     }
 
   /*
