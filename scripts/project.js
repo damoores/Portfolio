@@ -11,17 +11,10 @@ function Project (info) {
 }
 
 Project.prototype.toHtml = function() {
-  var $newProject = $('article.template').clone();
+  var $source = $('#article-template').html();
+  var template = Handlebars.compile($source);
 
-  $newProject.find('#project-title').text(this.title);
-  $newProject.find('.category').text(this.category);
-  $newProject.find('.language').text(this.language);
-  $newProject.find('.client').text(this.client);
-  $newProject.find('.project-body').html(this.description);
-
-  $newProject.append('<hr>');
-  $newProject.removeClass('template');
-  return $newProject;
+  return template(this);
 };
 
 ourLocalData.forEach(function(item) {
