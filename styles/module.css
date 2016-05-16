@@ -10,6 +10,7 @@
   margin-right: .75em;
   margin-left: .75em;
   padding: .5em .25em;
+  border-radius: 15%;
 }
 
 .site-navbar {
@@ -17,6 +18,8 @@
   padding:0;
   display: inline-block;
   list-style: none;
+  background: rgba(28, 29, 33, 0.6);
+
 }
 
 nav {

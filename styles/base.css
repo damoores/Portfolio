@@ -1,14 +1,26 @@
 body {
   background-color: #31353D;
+  background: -webkit-linear-gradient(#31353D, #1C1D21); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#31353D, #1C1D21); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#31353D, #1C1D21); /* For Firefox 3.6 to 15 */
+  background-image: linear-gradient(#31353D, #1C1D21); /* Standard syntax */
   font-family: "Lucida Console", Monaco, monospace;
 }
 
 hr {
   border-color: #445878;
   background-color: #445878;
+
   margin: 2em;
   width: 80%;
   margin: auto;
+}
+
+.site-header {
+  /*background-image: url("../images/diamond-plate.png");*/
+  background-image: url("../images/metal-brushed.png");
+  background-size: 100%;
+  width: 100%;
 }
 
 .project-body {
