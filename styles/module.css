@@ -5,11 +5,12 @@
   margin-bottom: 5%;
 }
 
-.site-navbar li {
+.site-navbar li a {
   display: inline-block;
   margin-right: .75em;
   margin-left: .75em;
-  padding: .5em .25em;
+  padding: 1em 1em 1em 1em;
+  margin: auto;
 }
 
 .site-navbar {
@@ -17,15 +18,16 @@
   padding:0;
   display: inline-block;
   list-style: none;
+  width: 100%
 }
 
 nav {
   text-align: center;
 }
-.site-navbar li a {
+.site-navbar li {
   clear: both;
   margin: auto;
-  display: block;
+  display: inline-block;
   text-decoration: none;
   color: #92CDCF;
 }

@@ -11,15 +11,15 @@ projectView.handleMainNav = function() {
 };
 
 projectView.setTeasers = function() {
-  $('.project-body *:nth-of-type(n+1)').hide();
-  $('read-on').on('click', function(e) {
+  $('.project-body *:nth-of-type(n+2)').hide();
+  $('.read-on').on('click', function(e) {
     e.preventDefault();
-    $('project-body *:nth-of-type(n+1)').show();
-    $('read-on').hide();
+    $('.project-body *:nth-of-type(n+2)').show();
+    $('.read-on').hide();
   });
 };
 
-$(document).ready( function() {
+$(document).ready(function() {
   projectView.handleMainNav();
   projectView.setTeasers();
 });
