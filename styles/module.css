@@ -18,7 +18,11 @@
   padding:0;
   display: inline-block;
   list-style: none;
+<<<<<<< HEAD
   background: rgba(28, 29, 33, 0.6);
+=======
+  width: 100%
+>>>>>>> 6c9298d7c33c76f85efcc3a3678c25015584f540
 }
 
 nav {

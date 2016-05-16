@@ -7,7 +7,7 @@
   <link href="styles/base.css" type="text/css" rel="stylesheet" />
   <link href="styles/layout.css" type="text/css" rel="stylesheet" />
   <link href="styles/module.css" type="text/css" rel="stylesheet" />
-
+  <script id="article-template" type="text/x-handlebars-template"
 </head>
 <body>
   <header class="site-header">
@@ -25,24 +25,24 @@
     <h2>Codesmith</2>
       <img src="images/me.jpg" id="me" class="rounded" alt="That's me">
 
-    <section id="projects" class"tab-content">
+    <section id="projects" class="tab-content">
       <h2 id="latest-projects">Latest Projects</h2>
       <article class="template">
         <header>
-          <h1 id="project-title">Title</h1>
+          <h1 id="project-title">{{title}}</h1>
           <div class="project-info">
-            <h2 class="category">Category</h2>
-            <h2 class="language">Language</h2>
-            <h2 class="client">Client</h2>
+            <h2 class="category">{{category}}</h2>
+            <h2 class="language">{{language}}</h2>
+            <h2 class="client">{{client}}</h2>
           </div>
         </header>
-        <section class="project-body">
+        <section class="project-body">{{{body}}}
         </section>
-        <a href="#" class="read-on">Read on &rarr;</a>
+        <a class="read-on">Read more</a
       </article>
     </section>
 
-    <section id="about" class"tab-content">
+    <section id="about" class="tab-content">
       <h1>Some things I like</h1>
       <ul>
         <li>Playing poker</li>
@@ -52,7 +52,7 @@
       </ul>
     </section>
 
-    <section id="contact" class"tab-content">
+    <section id="contact" class="tab-content">
       <ul>
         <li>damoores@gmail.com</li>
         <li>971.227.9282</li>
@@ -68,6 +68,7 @@
         </ul>
     </footer>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.js"></script>
 
       <script src="scripts/projectData.js"></script>
       <script src="scripts/project.js"></script>
