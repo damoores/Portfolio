@@ -7,39 +7,41 @@
   <link href="styles/base.css" type="text/css" rel="stylesheet" />
   <link href="styles/layout.css" type="text/css" rel="stylesheet" />
   <link href="styles/module.css" type="text/css" rel="stylesheet" />
-  <script id="article-template" type="text/x-handlebars-template"
+
+  <script id="article-template" type="text/x-handlebars-template">
+    <article>
+      <header>
+        <h1 id="project-title">{{title}}</h1>
+        <div class="project-info">
+          <h2 class="category">{{category}}</h2>
+          <h2 class="language">{{language}}</h2>
+          <h2 class="client">{{client}}</h2>
+        </div>
+      </header>
+      <section class="project-body">{{{body}}}</section>
+      <a href="#" class="read-on">Read more</a>
+    </article>
+  </script>
 </head>
 <body>
   <header class="site-header">
   <img src="images/hammer.png" id="hammer" alt="Hammer icon">
-    <nav>
-      <ul class="site-navbar">
-        <li class="tab" data-content"projects"><a href="#" >home</a></li>
-        <li class="tab" data-content"about"><a href="#" >about</a></li>
-        <li class="tab" data-content"contact"><a href="#" >contact</a></li>
+    <nav class="site-navbar">
+      <ul>
+        <li class="tab" data-content="projects"><a href="#" >home</a></li>
+        <li class="tab" data-content="about"><a href="#" >about</a></li>
+        <li class="tab" data-content="contact"><a href="#" >contact</a></li>
       </ul>
     </nav>
   </header>
   <main>
+    <section class="heading-h1">
     <h1>Jeremy Moore</h1>
     <h2>Codesmith</2>
       <img src="images/me.jpg" id="me" class="rounded" alt="That's me">
-
+    </section>
     <section id="projects" class="tab-content">
       <h2 id="latest-projects">Latest Projects</h2>
-      <article class="template">
-        <header>
-          <h1 id="project-title">{{title}}</h1>
-          <div class="project-info">
-            <h2 class="category">{{category}}</h2>
-            <h2 class="language">{{language}}</h2>
-            <h2 class="client">{{client}}</h2>
-          </div>
-        </header>
-        <section class="project-body">{{{body}}}
-        </section>
-        <a class="read-on">Read more</a
-      </article>
     </section>
 
     <section id="about" class="tab-content">
@@ -54,7 +56,7 @@
 
     <section id="contact" class="tab-content">
       <ul>
-        <li>damoores@gmail.com</li>
+        <li><a href"mailto:damoores@gmail.com?Subject=Hi%20there">damoores(at)gmail[dot]com</li>
         <li>971.227.9282</li>
       </ul>
     </section>
@@ -67,10 +69,10 @@
           <!-- <li><a href="" >snapchat</a></li> -->
         </ul>
     </footer>
-      <script src="vendor/scripts/jquery-2.2.3.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.amd.js"></script>
-      <script src="scripts/projectData.js"></script>
-      <script src="scripts/project.js"></script>
-      <script src="scripts/projectView.js"></script>
+    <script src="vendor/scripts/jquery-2.2.3.js"></script>
+    <script src="vendor/scripts/handlebars.js"></script>
+    <script src="scripts/project.js"></script>
+    <script src="scripts/projectView.js"></script>
+    <script> Project.fetchAll(); </script>
     </body>
     </html>

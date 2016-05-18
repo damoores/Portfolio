@@ -1,25 +1,26 @@
 var projectView = {};
 
 projectView.handleMainNav = function() {
-  $('.site-navbar').on('click', 'li', function(e) {
-    e.preventDefault();
+  $('.site-header').on('click', '.tab', function(e) {
     $('.tab-content').hide();
-    var show =$(this).attr('data-content');
-    $('#' + show).show();
+    $('#' + $(this).data('content')).fadeIn();
   });
-  $('.site-navbar .tab:first').click();
+  $('.site-header .tab:first').click();
 };
 
 projectView.setTeasers = function() {
   $('.project-body *:nth-of-type(n+2)').hide();
-  $('.read-on').on('click', function(e) {
+  $('#projects').on('click', 'a.read-on', function(e) {
     e.preventDefault();
-    $('.project-body *:nth-of-type(n+2)').show();
-    $('.read-on').hide();
+    $(this).parent().find('*').fadeIn();
+    $(this).hide();
   });
 };
 
-$(document).ready(function() {
+projectView.initIndexPage = function() {
+  Project.all.forEach(function(a){
+    $('#projects').append(a.toHtml($('#article-template')));
+  });
   projectView.handleMainNav();
   projectView.setTeasers();
-});
+};
