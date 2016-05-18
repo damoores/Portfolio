@@ -17,7 +17,7 @@ Project.loadAll = function(dataWePassIn) {
   });
 };
 
-Article.fetchAll = function () {
+Project.fetchAll = function () {
   if (localStorage.projectData) {
     Project.loadAll(JSON.parse(localStorage.projectData));
     projectView.initIndexPage();
@@ -29,8 +29,3 @@ Article.fetchAll = function () {
     });
   }
 };
-
-
-projects.forEach(function(a) {
-  $('#projects').append(a.toHtml());
-});
