@@ -5,6 +5,7 @@ body {
   background: -moz-linear-gradient(#31353D, #1C1D21); /* For Firefox 3.6 to 15 */
   background-image: linear-gradient(#31353D, #1C1D21); /* Standard syntax */
   font-family: "Lucida Console", Monaco, monospace;
+  color: #92CDCF;
 }
 
 hr {
@@ -17,7 +18,6 @@ hr {
 }
 
 .site-header {
-  /*background-image: url("../images/diamond-plate.png");*/
   background-image: url("../images/metal-brushed.jpg");
   background-size: 100%;
   width: 100%;
@@ -30,6 +30,73 @@ hr {
   padding-bottom: 1em;
 }
 
+
+/*<p>hi folks, this is typing animation using CSS</p>
+<p>created with ♥ by
+  <a href="https://twitter.com/@samarkandiy" title="Azik Samarkandiy">@samarkandiy</a>
+:)<span>|</span></p> */  /* Inspired by Lea Verou's http://lea.verou.me/more-css-secrets/*/
+
+
+/*  1C1D21 black
+  31353D slate grey
+  445878 lighter slate
+  92CDCF light slate teal
+  EEEFF7 very light slate teal
+
+  */
+
+p {
+  color: #92CDCF;
+  font-size: 12px;
+  margin: 10px 0 0 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 30em;
+  animation: type 4s steps(60, end);
+}
+
+p:nth-child(2){
+  animation: type2 8s steps(60, end);
+}
+p:nth-child(3){
+  animation: type3 14s steps(60, end);
+}
+p:nth-child(4){
+  animation: type3 20s steps(60, end);
+}
+
+/*p a{
+  color: #92CDCF;
+  text-decoration: none;
+}*/
+
+.cursor{
+  animation: blink 1s infinite;
+}
+
+@keyframes type{
+  from { width: 0; }
+}
+
+@keyframes type2{
+  0%{width: 0;}
+  50%{width: 0;}
+  100%{ width: 100; }
+}
+@keyframes type3{
+  0%{width: 0;}
+  50%{width: 0;}
+  75%{width: 0;}
+  100%{ width: 100; }
+}
+
+@keyframes blink{
+  to{opacity: .0;}
+}
+
+::selection{
+  background: #1C1D21;
+}
 
 /*
 

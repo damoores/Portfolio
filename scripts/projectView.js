@@ -25,8 +25,7 @@ projectView.setFunFact = function() {
       var results = a += b;
       return (results);
     }, [] );
-    $('#fun-fact').append('<p>There are ' + elements.length + ' HTML tags on this page.</p>' );
-    $('#fun-fact').append('<p>That means I typed ' + splitResult.length + ' characters. If I got them all right the first time. Which I did not.</p>' );
+    $('#fun-fact').append('<p class="typing">There are ' + elements.length + ' HTML tags on this page...</p><p>That means I typed ' + splitResult.length + ' characters...  </p><p>If I got them all right the first time...</p><p>Which I did...     not.<span class="cursor">|</span></p>');
     return console.log(splitResult.length);
   };
   countElements();

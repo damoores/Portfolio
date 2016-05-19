@@ -30,19 +30,19 @@ nav {
   margin: auto;
   display: inline-block;
   text-decoration: none;
-  color: #92CDCF;
+  /*color: #92CDCF;*/
 }
 
 #about ul li {
   display: block;
   text-decoration: none;
-  color: #92CDCF;
+  /*color: #92CDCF;*/
 }
 
   footer {
     clear: both;
     display:inline-block;
-    color: #92CDCF;
+    /*color: #92CDCF;*/
     bottom: 0px;
     width: 100%;
 
@@ -51,7 +51,7 @@ nav {
   footer li a {
     margin-right: 1.5em;
     padding: .5em .25em;
-    color: #92CDCF;
+    /*color: #92CDCF;*/
   }
 
   #me {
@@ -59,7 +59,8 @@ nav {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 4em;
+    margin-top: 1.5em;
+    margin-bottom: 2em;
     width: 30%;
     height: 30%;
   }
@@ -79,7 +80,7 @@ nav {
       display: block;
       text-align: center;
       clear: both;
-      color: #92CDCF;
+      /*color: #92CDCF;*/
       margin: auto;
       padding-top: 1em;
       font-size: 1em;
@@ -95,9 +96,9 @@ nav {
       min-width: 300px;
     }
 
-  /*
 
-  1C1D21 black
+
+/*  1C1D21 black
   31353D slate grey
   445878 lighter slate
   92CDCF light slate teal
