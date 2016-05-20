@@ -1,9 +1,18 @@
 .social-icons li {
+  background-color: #31353D;
+  font-family: "Lucida Console", Monaco, monospace;
+  color: #92CDCF;
   display: block;
   float: left;
   margin-right: 5px;
   margin-bottom: 5%;
 }
+
+ li a {
+   font-family: "Lucida Console", Monaco, monospace;
+   color: #92CDCF;
+   text-decoration: none;
+ }
 
 .site-navbar li a {
   display: inline-block;
@@ -13,7 +22,7 @@
   border-radius: 15%;
 }
 
-.site-navbar {
+.site-navbar ul {
   margin:0;
   padding:0;
   display: inline-block;
