@@ -7,6 +7,7 @@
   <link href="styles/base.css" type="text/css" rel="stylesheet" />
   <link href="styles/layout.css" type="text/css" rel="stylesheet" />
   <link href="styles/module.css" type="text/css" rel="stylesheet" />
+  <link href"vendor/styles/typings.css" type="text/css" rel="stylesheet" />
 
   <script id="article-template" type="text/x-handlebars-template">
     <article>
@@ -18,8 +19,7 @@
           <h2 class="client">{{client}}</h2>
         </div>
       </header>
-      <section class="project-body">{{{body}}}</section>
-      <a href="#" class="read-on">Read more</a>
+      <section class="description">{{{description}}}</section>
     </article>
   </script>
 </head>
@@ -28,9 +28,9 @@
   <img src="images/hammer.png" id="hammer" alt="Hammer icon">
     <nav class="site-navbar">
       <ul>
-        <li class="tab" data-content="projects"><a href="#" >home</a></li>
-        <li class="tab" data-content="about"><a href="#" >about</a></li>
-        <li class="tab" data-content="contact"><a href="#" >contact</a></li>
+        <li class="tab" data-content="projects"><a href="/home" >home</a></li>
+        <li class="tab" data-content="about"><a href="/about" >about</a></li>
+        <li class="tab" data-content="contact"><a href="/contact" >contact</a></li>
       </ul>
     </nav>
   </header>
@@ -41,7 +41,7 @@
       <img src="images/me.jpg" id="me" class="rounded" alt="That's me">
     </section>
     <section id="projects" class="tab-content">
-      <h2 id="latest-projects">Latest Projects</h2>
+      <!-- <h2 id="latest-projects">Latest Projects</h2> -->
     </section>
 
     <section id="about" class="tab-content">
@@ -68,11 +68,16 @@
         <li><a href="https://www.linkedin.com/in/jeremy-moore-78515a7b" target="_blank">linkdin</a></li>
           <!-- <li><a href="" >snapchat</a></li> -->
         </ul>
+        <div id="fun-fact" class="scroll-left"></div>
     </footer>
     <script src="vendor/scripts/jquery-2.2.3.js"></script>
     <script src="vendor/scripts/handlebars.js"></script>
-    <script src="scripts/project.js"></script>
-    <script src="scripts/projectView.js"></script>
-    <script> Project.fetchAll(); </script>
-    </body>
-    </html>
+    <script src="vendor/scripts/page.js"></script>
+    <script src="scripts/models/project.js"></script>
+    <script src="scripts/views/projectView.js"></script>
+    <script src="scripts/controllers/aboutController.js"></script>
+    <script src="scripts/controllers/contactController.js"></script>
+    <script src="scripts/controllers/projectsController.js"></script>
+    <script src="scripts/controllers/routes.js"></script>
+  </body>
+</html>
