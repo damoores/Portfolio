@@ -13,8 +13,6 @@
   };
 
   Project.loadAll = function(dataWePassIn) {
-    // dataWePassIn.forEach(function(item) {
-    //   Project.all.push(new Project(item));
     Project.all = dataWePassIn.map(function(item) {
       return new Project(item);
     });

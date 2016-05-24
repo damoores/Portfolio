@@ -28,9 +28,9 @@
   <img src="images/hammer.png" id="hammer" alt="Hammer icon">
     <nav class="site-navbar">
       <ul>
-        <li class="tab" data-content="projects"><a href="#" >home</a></li>
-        <li class="tab" data-content="about"><a href="#" >about</a></li>
-        <li class="tab" data-content="contact"><a href="#" >contact</a></li>
+        <li class="tab" data-content="projects"><a href="/home" >home</a></li>
+        <li class="tab" data-content="about"><a href="/about" >about</a></li>
+        <li class="tab" data-content="contact"><a href="/contact" >contact</a></li>
       </ul>
     </nav>
   </header>
@@ -72,8 +72,12 @@
     </footer>
     <script src="vendor/scripts/jquery-2.2.3.js"></script>
     <script src="vendor/scripts/handlebars.js"></script>
-    <script src="scripts/project.js"></script>
-    <script src="scripts/projectView.js"></script>
-    <script> Project.fetchAll(); </script>
-    </body>
-    </html>
+    <script src="vendor/scripts/page.js"></script>
+    <script src="scripts/models/project.js"></script>
+    <script src="scripts/views/projectView.js"></script>
+    <script src="scripts/controllers/aboutController.js"></script>
+    <script src="scripts/controllers/contactController.js"></script>
+    <script src="scripts/controllers/projectsController.js"></script>
+    <script src="scripts/controllers/routes.js"></script>
+  </body>
+</html>
