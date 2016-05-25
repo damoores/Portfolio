@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Jeremy Moore. Solutions.</title>
+  <link href="vendor/styles/normalize.css" type="text/css" rel="stylesheet" />
   <link href="styles/base.css" type="text/css" rel="stylesheet" />
   <link href="styles/layout.css" type="text/css" rel="stylesheet" />
   <link href="styles/module.css" type="text/css" rel="stylesheet" />
@@ -22,11 +23,24 @@
       <section class="description">{{{description}}}</section>
     </article>
   </script>
+
+  <script id="repo-template" type="text/x-handlebars-template">
+    <li>
+      <a href="{{htm_url}}" target="_blank"><h3>{{name}}</h3></a>
+      <p>Description: {{description}}</p>
+      <p>Language: {{language}}</p>
+      <p>Last update: {{updated_at}}</p>
+    </li>
+  </script>
+
 </head>
 <body>
   <header class="site-header">
-  <img src="images/hammer.png" id="hammer" alt="Hammer icon">
     <nav class="site-navbar">
+      <img src="images/hammer.png" id="hammer" alt="Hammer icon">
+      <p>Jeremy Moore Codesmith</p>
+      <img src="images/me.jpg" id="me" class="rounded" alt="That's me">
+
       <ul>
         <li class="tab" data-content="projects"><a href="/home" >home</a></li>
         <li class="tab" data-content="about"><a href="/about" >about</a></li>
@@ -35,22 +49,23 @@
     </nav>
   </header>
   <main>
-    <section class="heading-h1">
-    <h1>Jeremy Moore</h1>
-    <h2>Codesmith</2>
-      <img src="images/me.jpg" id="me" class="rounded" alt="That's me">
-    </section>
+
+    <section class="slider">
+    <ul class="bxslider">
+      <li>Picture for slider here</li>
+      <li>Second slider</li>
+      <li>Third Slider</li>
+    </ul>
+  </section>
+
     <section id="projects" class="tab-content">
       <!-- <h2 id="latest-projects">Latest Projects</h2> -->
     </section>
 
     <section id="about" class="tab-content">
-      <h1>Some things I like</h1>
+      <h1>Recent projects on GitHub:</h1>
       <ul>
-        <li>Playing poker</li>
-        <li>Good beer</li>
-        <li>Solving problems with code</li>
-        <li>My daughters</li>
+        <li>Projects here</li>
       </ul>
     </section>
 
@@ -74,7 +89,10 @@
     <script src="vendor/scripts/handlebars.js"></script>
     <script src="vendor/scripts/page.js"></script>
     <script src="scripts/models/project.js"></script>
+    <script src="scripts/models/repo.js"></script>
+    <script src="data/github_token.js"></script>
     <script src="scripts/views/projectView.js"></script>
+    <script src="scripts/views/repoView.js"></script>
     <script src="scripts/controllers/aboutController.js"></script>
     <script src="scripts/controllers/contactController.js"></script>
     <script src="scripts/controllers/projectsController.js"></script>

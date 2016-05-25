@@ -5,9 +5,8 @@
     if ($('#projects section').length === 0) {
       Project.fetchAll(projectView.initIndexPage);
     }
-    $('#about').hide();
-    $('#contact').hide();
-    $('#projects').show();
+    $('#projects').show().siblings().hide();
+    $('.slider').show();
   };
   module.projectsController = projectsController;
 })(window);

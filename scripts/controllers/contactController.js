@@ -2,9 +2,7 @@
   var contactController = {};
 
   contactController.index = function() {
-    $('#about').hide();
-    $('#projects').hide();
-    $('#contact').show();
+    $('#contact').show().siblings().hide();
   };
 
   module.contactController = contactController;

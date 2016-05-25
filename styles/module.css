@@ -65,7 +65,7 @@ nav {
 
   #me {
     clear: both;
-    display: block;
+    display: inline-block;
     margin-left: auto;
     margin-right: auto;
     margin-top: 1.5em;
@@ -76,7 +76,7 @@ nav {
 
   #hammer {
     clear: both;
-    display: block;
+    display: inline-block;
     margin: auto;
     width: 20%;
     height: 20%;
